@@ -14,6 +14,7 @@ pipeline {
         }
         stage("test"){
             steps{
+               sh "chmod +x -R ${env.WORKSPACE}"
                sh './main'
             }
         }
