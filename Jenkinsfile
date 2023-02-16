@@ -16,7 +16,7 @@ pipeline {
         stage("test"){
             steps{
                sh "chmod +x -R ${env.WORKSPACE}"
-               sh './var/jenkins_home/workspace/pes2ug20cs257/main'
+               ./JENKINS_HOME/pes2ug20cs257/builds/main
             }
         }
     }
