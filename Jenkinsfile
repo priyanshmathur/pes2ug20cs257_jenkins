@@ -10,12 +10,13 @@ pipeline {
         stage("build"){
             steps{
                sh 'make -C main'
+               echo "PATH is: ${env.PATH}"
             }
         }
         stage("test"){
             steps{
                sh "chmod +x -R ${env.WORKSPACE}"
-               sh '/var/jenkins_home/workspace/pes2ug20cs257/main'
+               sh '${env.PATH}/main'
             }
         }
     }
