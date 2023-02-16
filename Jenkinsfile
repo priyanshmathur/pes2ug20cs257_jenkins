@@ -4,7 +4,7 @@ pipeline {
         stage('cloning') {
             steps {
                git branch : "main",
-               url : "https://github.com/NavinShrinivas/pes2ug20cs257_jenkins"
+               url : "https://github.com/priyanshmathur/pes2ug20cs257_jenkins"
             }
         }
         stage("build"){
