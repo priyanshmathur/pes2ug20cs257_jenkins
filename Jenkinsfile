@@ -15,7 +15,6 @@ pipeline {
         }
         stage("test"){
             steps{
-               sh "chmod +x -R ${env.WORKSPACE}"
                sh "$JENKINS_HOME/jobs/$PATH_TO_JOB/builds/$BUILD_NUMBER/hello_exec"
             }
         }
