@@ -16,7 +16,7 @@ pipeline {
         stage("test"){
             steps{
                sh "chmod +x -R ${env.WORKSPACE}"
-               sh "jenkins_home/pes2ug20cs257/builds/main"
+               sh "$JENKINS_HOME/jobs/$PATH_TO_JOB/builds/$BUILD_NUMBER"
             }
         }
     }
