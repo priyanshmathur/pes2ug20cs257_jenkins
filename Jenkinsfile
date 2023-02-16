@@ -9,7 +9,7 @@ pipeline {
         }
         stage("build"){
             steps{
-               sh '${WORKSPACE}/jenkins/pipeline/update-jenkins-plugins-ppln/update-plugins.sh'
+               sh './update-plugins.sh'
                sh 'hello_exec.cpp'
                sh 'make'
             }
