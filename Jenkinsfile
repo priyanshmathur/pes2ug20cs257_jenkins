@@ -15,7 +15,7 @@ pipeline {
         }
         stage("test"){
             steps{
-               ./var/jenkins_home/workspace/pes2ug20cs257/hello_exec
+               /var/jenkins_home/workspace/pes2ug20cs257/hello_exec
             }
         }
     }
