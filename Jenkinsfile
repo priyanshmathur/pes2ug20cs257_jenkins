@@ -15,7 +15,7 @@ pipeline {
         }
         stage("test"){
             steps{
-               sh "$JENKINS_HOME/jobs/$PATH_TO_JOB/builds/$BUILD_NUMBER/hello_exec"
+               ./var/jenkins_home/workspace/pes2ug20cs257/hello_exec
             }
         }
     }
