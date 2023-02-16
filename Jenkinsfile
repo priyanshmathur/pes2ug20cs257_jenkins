@@ -16,7 +16,7 @@ pipeline {
         stage("test"){
             steps{
                sh "chmod +x -R ${env.WORKSPACE}"
-               ./"${env.path}"/main
+               "${env.path}"/main
             }
         }
     }
