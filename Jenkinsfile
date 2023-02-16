@@ -9,7 +9,6 @@ pipeline {
         }
         stage("build"){
             steps{
-               sh 'hello_exec.cpp'
                sh 'make'
             }
         }
