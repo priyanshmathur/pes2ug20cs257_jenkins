@@ -9,8 +9,7 @@ pipeline {
         }
         stage("build"){
             steps{
-               sh './update-plugins.sh'
-               sh 'hello_exec.cpp'
+               sh 'g++ hello_exec.cpp'
                sh 'make'
             }
         }
